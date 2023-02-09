@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .item {
+            padding: 8px;
+            line-height: 16px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .item img {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 4px;
+        }
+        .item:hover {
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <b>Choose root folder:</b>
+    <input id="search" placeholder="search for a folder..."/>
+    <div id="root">
+        <div class="item">thing 1</div>
+        <div class="item">thing 2</div>
+        <div class="item">thing 3</div>
+    </div>
+    <div id="console"></div>
+    <script src="popup.js"></script>
+</body>
+</html>
